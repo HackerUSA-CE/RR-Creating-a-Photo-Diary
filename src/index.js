@@ -1,3 +1,4 @@
+import koalas from "./koalas";
 
 let activeKoala = null
 
