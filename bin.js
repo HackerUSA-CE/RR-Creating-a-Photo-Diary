@@ -2,7 +2,7 @@
 const open = require('open')
 const { exec, spawn } = require('child_process')
 exec('npx webpack --mode="development"', () => {
-    spawn('npx', [ 'webpack', '--watch', '--mode="development"' ], { stdio: 'inherit' });
+    spawn(/^win/.test(process.platform) ? 'npx.cmd' : 'npx', [ 'webpack', '--watch', '--mode="development"' ], { stdio: 'inherit' });
     open('./public/index.html')
     console.log('Watching for changes in "./src"')
 })
