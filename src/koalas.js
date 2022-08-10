@@ -1,4 +1,4 @@
-const koalas = [
+export const koalas = [
     {
         name: 'Basil',
         description: `This koala is loving towards me, and will always come when called. She is distrustful of strangers, and dislikes other koalas.`,
